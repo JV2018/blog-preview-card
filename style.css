@@ -4,6 +4,18 @@
 
 /* Do I leave alt blank if image is decorative? */
 
+/* Put image inside figure element? */
+
+/* Figure out proper font sizes */
+
+/* Look up difference between inline and inline-block */
+
+
+:root {
+    --yellow: #F4D04E;
+    --black: #1E1E1E;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,17 +23,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F4D04E;
+    background-color: var(--yellow);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
 }
 
 .container {
     background-color: #FFF;
     width: 18rem;
     padding: 1.5rem;
+    border-radius: 20px;
 }
 
 .blog-image {
@@ -29,4 +44,17 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+.text-content {
+    margin-top: 1.5rem;
+}
+
+.article-category {
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 4px;
+    font-weight: 800;
+    padding: 0.25rem 0.75rem;
+    display: inline;
 }
