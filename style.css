@@ -1,0 +1,32 @@
+/* Users should be able to see hover and focus states for all interactive elements on the page */
+
+/* The font sizes in this project a slightly smaller in the mobile layout. Find a way to reduce font size for smaller screens without using media queries. */
+
+/* Do I leave alt blank if image is decorative? */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #FFF;
+    width: 18rem;
+    padding: 1.5rem;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
