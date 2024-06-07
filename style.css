@@ -1,23 +1,8 @@
-/* Users should be able to see hover and focus states for all interactive elements on the page */
-
-/* The font sizes in this project a slightly smaller in the mobile layout. Find a way to reduce font size for smaller screens without using media queries. */
-
-/* Do I leave alt blank if image is decorative? */
-
-/* Put image inside figure element? */
-
-/* Figure out proper font sizes */
-
-/* Look up difference between inline and inline-block */
-
-/* Change article-category div to something more semantic? */ 
-
-/* Use a div as the overall container instead of main? That would make it easier to use a footer. Could maybe replace article with main? Though article on its own with no main might work */
-
-
 :root {
     --yellow: #F4D04E;
     --black: #1E1E1E;
+    --grey: #7F7F7F;
+    --white: #FFF;
 }
 
 * {
@@ -34,13 +19,15 @@ body {
     height: 100vh;
     font-family: 'Figtree', sans-serif;
     line-height: 1.5;
+    color: var(--black);
 }
 
 .container {
-    background-color: #FFF;
-    width: 18rem;
+    background-color: var(--white);
+    width: 20rem;
     padding: 1.5rem;
     border-radius: 20px;
+    box-shadow: 8px 8px 0 rgba(0,0,0,1);
 }
 
 .blog-image {
@@ -56,37 +43,48 @@ body {
 
 .article-category {
     background-color: var(--yellow);
-    color: var(--black);
     border-radius: 4px;
     font-size: 0.875rem;
     font-weight: 800;
     padding: 0.25rem 0.75rem;
-    display: inline;
+    display: inline-block;
 }
 
 .date-published {
     font-size: 0.875rem;
-    margin: 0.75rem 0 0 0;
+    margin: 0.75rem 0;
 }
 
 .article-title {
-    margin: 0;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.article-title:hover,
+.article-title:focus {
+    cursor: pointer;
+    color: var(--yellow);
 }
 
 .article-text {
     margin: 0;
+    font-size: 1rem;
+    color: var(--grey);
 }
 
 .author-info {
     display: flex;
+    align-items: center;
 }
 
 .author-photo {
     width: 2rem;
     height: 2rem;
-    align-self: center;
 }
 
 .author-name {
     margin: 0 0 0 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 800;
 }
