@@ -10,6 +10,10 @@
 
 /* Look up difference between inline and inline-block */
 
+/* Change article-category div to something more semantic? */ 
+
+/* Use a div as the overall container instead of main? That would make it easier to use a footer. Could maybe replace article with main? Though article on its own with no main might work */
+
 
 :root {
     --yellow: #F4D04E;
@@ -46,15 +50,43 @@ body {
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
 }
 
-.text-content {
-    margin-top: 1.5rem;
+.content {
+    margin: 1.5rem 0;
 }
 
 .article-category {
     background-color: var(--yellow);
     color: var(--black);
     border-radius: 4px;
+    font-size: 0.875rem;
     font-weight: 800;
     padding: 0.25rem 0.75rem;
     display: inline;
+}
+
+.date-published {
+    font-size: 0.875rem;
+    margin: 0.75rem 0 0 0;
+}
+
+.article-title {
+    margin: 0;
+}
+
+.article-text {
+    margin: 0;
+}
+
+.author-info {
+    display: flex;
+}
+
+.author-photo {
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+}
+
+.author-name {
+    margin: 0 0 0 0.75rem;
 }
